@@ -2,6 +2,7 @@ from __future__ import annotations
 from typing import Tuple, List
 from abc import ABC, abstractmethod
 
+#Here we create an abstract class, an abstract class can't be instantiated, only it's child.
 class Pokemon(ABC):
     def __init__(self, name: str, pokedexId: str, level: int, living_points: int, attacking_points: int,
                  defense_points: int, attack: List[Tuple[str, int]]) -> None:

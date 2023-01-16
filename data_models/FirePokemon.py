@@ -1,3 +1,4 @@
+from data_models.PokeType import PokeType
 from data_models.Pokemon import Pokemon
 
 
@@ -6,6 +7,8 @@ class FirePokemon(Pokemon):
                  defense_points: int, attack):
         super().__init__(name, pokedexId, level, living_points, attacking_points,
                          defense_points, attack)
+
+        self.type: PokeType = PokeType(1)
 
     def lvlUp(self) -> Pokemon:
         pass
